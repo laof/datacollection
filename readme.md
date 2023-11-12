@@ -33,7 +33,6 @@ docker image rm 4afgeqo4456 // 删除
 docker run -d -p 6200:6200 --name sharefile
 ```
 
-
 ##### qinglong
 
 ```
@@ -48,10 +47,12 @@ docker run -dit \
 whyour/qinglong:latest
 ```
 
+##### 备份openwrt的所有用户数据
+```
+tar zcvf /tmp/backup.tar.gz /overlay/upper
+```
 
-
-
-
-
-
-
+##### 恢复openwrt的所有用户数据
+```
+tar x -zvC / -f /tmp/backup.tar.gz
+```
