@@ -56,3 +56,10 @@ tar zcvf /tmp/backup.tar.gz /overlay/upper
 ```
 tar x -zvC / -f /tmp/backup.tar.gz
 ```
+
+##### 修改界面
+```
+/usr/lib/lua/luci/controller/admin/system.lua  // 系统菜单
+
+/usr/lib/lua/luci/view/admin_system/  // xxx.htm文件
+```
