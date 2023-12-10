@@ -4,7 +4,7 @@
 https://fw.koolcenter.com/iStoreOS/x86_64_efi/
 ```
 
-##### PE U Install
+##### PE U Install (~2.39G)
 ```
 physdiskwrite.exe -u openwrt-22.03.3-x86-64-generic-ext4-combined-efi.img
 ```
