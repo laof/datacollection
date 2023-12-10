@@ -1,7 +1,34 @@
+##### download iStoreOS
+
+```
+https://fw.koolcenter.com/iStoreOS/x86_64_efi/
+```
+
 ##### PE U Install
 ```
 physdiskwrite.exe -u openwrt-22.03.3-x86-64-generic-ext4-combined-efi.img
 ```
+
+##### download ssr
+```
+https://github.com/AUK9527/Are-u-ok/tree/main/x86
+```
+
+##### edit port 4560
+
+```
+cd /etc/config
+vi uhttpd
+```
+
+```
+config uhttpd 'main'
+	list listen_http '0.0.0.0:4560'
+	list listen_http '[::]:4560'
+	list listen_https '0.0.0.0:4560'
+	list listen_https '[::]:4560'
+```
+
 
 ##### Update login background
 
